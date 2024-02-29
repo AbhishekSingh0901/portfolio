@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 import music from "../assets/music.mp3";
-import Robot from "../components/robot";
+import Robot from "../components/Robot";
 
 // import Navbar from "../components/Navbar";
 
