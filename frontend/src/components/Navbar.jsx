@@ -6,8 +6,8 @@ function Navbar() {
   const [toggleState, setToggleState] = useState(false);
   return (
     <>
-      <nav className="z-20 navbar fixed top-0 left-0 bottom-0 right-0 h-16 m-3 px-5 glass-effect rounded-2xl  text-neutral-300 flex justify-between lg:justify-around items-center ">
-        <h2 className="text-2xl">&lt;PORTFOLIO/&gt;</h2>
+      <nav className="z-40 navbar fixed top-0 left-0 bottom-0 right-0 h-16 m-3 px-5 glass-effect rounded-2xl  text-neutral-300 flex justify-between lg:justify-around items-center ">
+        <h2 className=" text-lg md:text-2xl">&lt;PORTFOLIO/&gt;</h2>
         <ul className="hidden list-none lg:flex justify-center gap-8 uppercase">
           <li>Home</li>
           <li>About</li>
@@ -20,7 +20,7 @@ function Navbar() {
           onClick={() => setToggleState(true)}
           className="p-2 rounded-full hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105 cursor-pointer"
         >
-          <AiOutlineMenu className="text-2xl lg:hidden" />
+          <AiOutlineMenu className="text-lg md:text-2xl text-2xl lg:hidden" />
         </div>
         <Sidebar toggleState={toggleState} setToggleState={setToggleState} />
       </nav>

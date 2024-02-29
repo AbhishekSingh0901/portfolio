@@ -25,11 +25,11 @@ function Homepage() {
     setIsPlaying(!isPlaying);
   };
   return (
-    <div className="relative text-3xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
+    <div className="relative text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
       <div className="z-10">
-        <div className="mx-8 md:ml-20 lg:ml-28 mt-20 text-neutral-300">
+        <div className="mx-8 md:ml-20 lg:ml-28 mt-14 md:mt-20 text-neutral-300">
           <h3>Hello!</h3>
-          <h1 className="border-b-8 border-neutral-300 w-full text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 bg-clip-text text-5xl md:text-7xl lg:text-8xl pb-4 mb-4">
+          <h1 className="border-b-8 border-neutral-300 w-full text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 bg-clip-text text-3xl md:text-7xl lg:text-8xl pb-4 mb-4">
             I am <span className="text-animation">Abhishek Singh</span>
           </h1>
           <h4>React Frontend Web Developer</h4>

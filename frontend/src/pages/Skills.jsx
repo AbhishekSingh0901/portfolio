@@ -13,7 +13,7 @@ import { SparklesCore } from "../components/ui/sparkles";
 
 function Skills() {
   const className =
-    "bg-neutral-900 shadow-md text-neutral-200 text-5xl flex flex-col justify-center items-center gap-3 w-32 h-32 md:w-48 md:h-48 rounded-full border-neutral-700 hover:shadow-xl hover:scale-110 border-8 transition-all duration-300";
+    "bg-neutral-900 shadow-md text-neutral-200 text-4xl md:text-5xl flex flex-col justify-center items-center gap-3 w-32 h-32 md:w-48 md:h-48 rounded-full border-neutral-700 hover:shadow-xl hover:scale-110 border-4 md:border-8 transition-all duration-300";
 
   return (
     <div className=" relative bg-gradient-to-br from-neutral-800 to-neutral-900 pt-28 pb-14 px-12">
@@ -29,11 +29,11 @@ function Skills() {
         />
       </div>
       <div className="relative z-20">
-        <h2 className="w-1/2 text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
+        <h2 className="w-2/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
           Skills
         </h2>
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-12 mx-auto">
+          <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 mx-auto">
             <div
               className={` ${className}   hover:text-orange-400 hover:border-orange-500 `}
             >
