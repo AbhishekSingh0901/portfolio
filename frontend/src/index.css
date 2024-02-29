@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  html {
+    font-family: "Turret Road", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #5b5b5b;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #2b2b2b;
+  }
+}
+
+.glass-effect {
+  @apply backdrop-blur-sm shadow-sm bg-black bg-opacity-5 border border-neutral-700;
+}
+
+.text-animation {
+  background: linear-gradient(
+    to right,
+    #a3a3a3 20%,
+    #5b5b5b 30%,
+    #cdcdcd 70%,
+    #525252 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.icon-rounded {
+  background-color: transparent;
+  color: #b4b4b4;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-rounded.playing {
+  animation: spin 1.5s linear infinite;
+  color: #b4b4b4; /* Change the color for the playing state */
+  transform-origin: center;
+}
+.icon-rounded:hover {
+  animation: spin 0.2s ease-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: (0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-image {
+  animation: floatAnimation 3s infinite ease;
+}
