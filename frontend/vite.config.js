@@ -6,13 +6,7 @@ export default defineConfig({
   plugins: [react(), eslint()],
   build: {
     rollupOptions: {
-      external: [
-        "gsap",
-        "react",
-        "react-dom",
-        "@mui/material",
-        "framer-motion",
-      ],
+      external: ["gsap", "@mui/material", "framer-motion"],
     },
   },
 });

@@ -1,6 +1,4 @@
 import { useLayoutEffect, useRef } from "react";
-
-// import AnimatedCursor from "react-animated-cursor";
 import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
 import { GiDiamondsSmile } from "react-icons/gi";
