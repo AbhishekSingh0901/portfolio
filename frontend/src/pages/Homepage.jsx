@@ -25,7 +25,7 @@ function Homepage() {
     setIsPlaying(!isPlaying);
   };
   return (
-    <div className="relative text-3xl md:text-4xl h-screen  bg-home bg-cover flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50">
+    <div className="relative text-3xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
       <div className="z-10">
         <div className="mx-8 md:ml-20 lg:ml-28 mt-20 text-neutral-300">
           <h3>Hello!</h3>
