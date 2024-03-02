@@ -7,7 +7,6 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import { SparklesCore } from "./components/ui/sparkles";
 import { InfiniteMovingCardsDemo } from "./pages/Testimonials";
-import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   const comp = useRef(null);
@@ -15,6 +14,7 @@ function App() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline();
+
       t1.from("#intro", {
         yPercent: "0",
         duration: 0.3,
@@ -33,6 +33,10 @@ function App() {
           yPercent: "100",
           duration: 1.3,
           display: "none",
+        })
+        .to("#content", {
+          display: "block",
+          duration: 1.3,
         });
     }, comp);
 
