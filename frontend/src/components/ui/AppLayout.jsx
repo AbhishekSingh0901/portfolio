@@ -1,17 +1,13 @@
 import { useLayoutEffect, useRef } from "react";
-import Homepage from "./pages/Homepage";
-import Navbar from "./components/Navbar";
-import { GiDiamondsSmile } from "react-icons/gi";
 import gsap from "gsap";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import { SparklesCore } from "./components/ui/sparkles";
-import { InfiniteMovingCardsDemo } from "./pages/Testimonials";
-import AnimatedCursor from "react-animated-cursor";
+import { Outlet } from "react-router-dom";
 
-function App() {
+import Navbar from "../Navbar";
+
+import { GiDiamondsSmile } from "react-icons/gi";
+
+function AppLayout() {
   const comp = useRef(null);
-
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline();
@@ -41,26 +37,9 @@ function App() {
 
   return (
     <div className="relative overflow-hidden" ref={comp}>
-      <div
-        id="content"
-        className="relative  bg-gradient-to-b from-neutral-800 to-neutral-950"
-      >
-        <div className="w-full fixed z-0 top-0 bottom-0 left-0 right-0 inset-0 h-full">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#FFFFFF"
-          />
-        </div>
+      <div id="content">
         <Navbar />
-        <Homepage />
-        <Skills />
-        <Projects />
-        <InfiniteMovingCardsDemo />
+        <Outlet />
       </div>
       <div
         id="intro"
@@ -74,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppLayout;

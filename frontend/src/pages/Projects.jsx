@@ -5,8 +5,11 @@ import tranquil from "../assets/tranquil.png";
 
 function Projects() {
   return (
-    <div className="w-full flex justify-center items-central pt-20 p-3 md:p-20 bg-neutral-700 ">
-      <div className="w-90%  mx-auto  max-w-8xl grid grid-cols-1 gap-16 xl:grid-cols-2 2xl:grid-cols-3">
+    <section className="w-full pt-20 p-3 md:p-20 ">
+      <h2 className="w-1/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
+        PROJECTS
+      </h2>
+      <div className="w-full md:w-4/5  mx-auto  max-w-8xl grid grid-cols-1 gap-16 xl:grid-cols-2 2xl:grid-cols-3">
         <ThreeDCardDemo
           name={"Aurelia Threads"}
           description={"E-commerce shop"}
@@ -23,7 +26,7 @@ function Projects() {
           image={crypto}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

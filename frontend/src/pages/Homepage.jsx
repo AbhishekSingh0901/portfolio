@@ -1,10 +1,10 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoPlayOutline, IoPauseOutline } from "react-icons/io5";
 import { RiLinkedinLine } from "react-icons/ri";
 import { VscGithubAlt } from "react-icons/vsc";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-
+import { motion, useInView } from "framer-motion";
 import music from "../assets/music.mp3";
 import Robot from "../components/Robot";
 
@@ -24,19 +24,47 @@ function Homepage() {
     }
     setIsPlaying(!isPlaying);
   };
+
   return (
-    <div className="relative text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
+    <section className="relative text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
       <div className="z-10">
         <div className="mx-8 md:ml-20 lg:ml-28 mt-14 md:mt-20 text-neutral-300">
-          <h3>Hello!</h3>
-          <h1 className="border-b-8 border-neutral-300 w-full text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 bg-clip-text text-3xl md:text-7xl lg:text-8xl pb-4 mb-4">
+          <motion.h3
+            initial={{ translateX: "-3rem", opacity: 0 }}
+            animate={{ translateX: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 3 }}
+          >
+            Hello!
+          </motion.h3>
+          <motion.h1
+            initial={{ translateX: "-3rem", opacity: 0 }}
+            animate={{ translateX: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 3.5 }}
+            className="border-b-8 border-neutral-300 w-full text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 bg-clip-text text-3xl md:text-7xl lg:text-8xl pb-4 mb-4"
+          >
             I am <span className="text-animation">Abhishek Singh</span>
-          </h1>
-          <h4>React Frontend Web Developer</h4>
+          </motion.h1>
+          <motion.h4
+            initial={{ translateX: "-3rem", opacity: 0 }}
+            animate={{ translateX: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 4 }}
+          >
+            React Frontend Web Developer
+          </motion.h4>
 
-          <button className=" text-white font-thin text-xl glass-effect py-3 px-6 mt-9 hover:scale-105 active:scale-100 transition-transform ease-in-out duration-100">
-            Get Resume
-          </button>
+          <motion.button
+            initial={{ translateY: "3rem", opacity: 0 }}
+            animate={{ translateY: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 4 }}
+            className=" text-white font-thin text-xl glass-effect py-3 px-6 mt-9 "
+          >
+            <motion.p
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              Get Resume
+            </motion.p>
+          </motion.button>
         </div>
         <div className=" absolute bottom-8 md:left-2 w-full md:w-fit flex justify-center md:flex-col  gap-4">
           <div className="glass-effect flex justify-center items-center p-3 rounded-full">
@@ -75,7 +103,7 @@ function Homepage() {
         </div>
         <Robot />
       </div>
-    </div>
+    </section>
   );
 }
 
