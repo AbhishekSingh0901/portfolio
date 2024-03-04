@@ -9,7 +9,7 @@ function Navbar() {
       <motion.nav
         initial={{ translateY: "-3rem", opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
-        transition={{ ease: "backInOut", duration: 1, delay: 0.8 }}
+        transition={{ ease: "backInOut", duration: 1, delay: 3 }}
         className="z-40 navbar fixed top-0 left-0 bottom-0 right-0 h-16 m-3 px-5 glass-effect rounded-2xl  text-neutral-300 flex justify-between lg:justify-around items-center "
       >
         <h2 className=" text-lg md:text-2xl">&lt;PORTFOLIO/&gt;</h2>

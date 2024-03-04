@@ -13,6 +13,20 @@ import { motion } from "framer-motion";
 import Skill from "../components/ui/Skill";
 
 function Skills() {
+  const fadeInUpAnimation = {
+    hidden: { opacity: 0, y: "50%" },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "easeInOutBack",
+        stiffness: 400,
+        damping: 5,
+        staggerChildren: 0.3,
+        duration: 1.5,
+      },
+    },
+  };
   return (
     <section className=" relative  mb-24 md:p-20 p-3 px-12 overflow-hidden">
       <div className="relative z-20">
@@ -26,52 +40,84 @@ function Skills() {
           SKILLS
         </motion.h2>
         <div className="flex justify-center items-center">
-          <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 mx-auto h-full ">
-            <Skill className={`hover:text-orange-400 hover:border-orange-500 `}>
+          <motion.div
+            variants={fadeInUpAnimation}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 mx-auto h-full "
+          >
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`hover:text-orange-400 hover:border-orange-500 `}
+            >
               <SiHtml5 />
               <p className="text-sm lg:text-xl ">HTML</p>
             </Skill>
-            <Skill className={`  hover:text-blue-400 hover:border-blue-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`  hover:text-blue-400 hover:border-blue-500`}
+            >
               <SiCss3 />
               <p className=" text-sm lg:text-xl ">CSS</p>
             </Skill>
-            <Skill className={`  hover:text-cyan-400 hover:border-cyan-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`  hover:text-cyan-400 hover:border-cyan-500`}
+            >
               <SiTailwindcss />
               <p className="text-sm md:text-xl ">Tailwind</p>
             </Skill>
-            <Skill className={`  hover:text-pink-400 hover:border-pink-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`  hover:text-pink-400 hover:border-pink-500`}
+            >
               <SiSass />
               <p className="text-sm md:text-xl ">Scss</p>
             </Skill>
             <Skill
+              variants={fadeInUpAnimation}
               className={`   hover:text-emerald-400 hover:border-emerald-500`}
             >
               <FaFigma />
               <p className="text-sm md:text-xl ">Figma</p>
             </Skill>
-            <Skill className={`   hover:text-amber-400 hover:border-amber-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`   hover:text-amber-400 hover:border-amber-500`}
+            >
               <SiJavascript />
               <p className="text-sm md:text-xl ">Javascript</p>
             </Skill>
-            <Skill className={`   hover:text-teal-400 hover:border-teal-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`hover:text-teal-400 hover:border-teal-500`}
+            >
               <SiReact />
               <p className="text-sm md:text-xl ">React</p>
             </Skill>
             <Skill
+              variants={fadeInUpAnimation}
               className={`  hover:text-purple-400 hover:border-purple-500`}
             >
               <SiRedux />
               <p className="text-sm md:text-xl ">Redux</p>
             </Skill>
-            <Skill className={`   hover:text-rose-400 hover:border-rose-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`hover:text-rose-400 hover:border-rose-500`}
+            >
               <SiReactquery />
               <p className="text-sm md:text-xl ">React Query</p>
             </Skill>
-            <Skill className={`  hover:text-red-400 hover:border-red-500`}>
+            <Skill
+              variants={fadeInUpAnimation}
+              className={`hover:text-red-400 hover:border-red-500`}
+            >
               <FaGitAlt />
               <p className="text-xl">Git</p>
             </Skill>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

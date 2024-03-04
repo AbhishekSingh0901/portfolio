@@ -6,9 +6,9 @@ function Robot() {
   return (
     <>
       <motion.div
-        initial={{ translateX: "30%", opacity: 0 }}
+        initial={{ translateX: "50%", opacity: 0 }}
         animate={{ translateX: 0, opacity: 1 }}
-        transition={{ ease: "backInOut", duration: 2, delay: 1.5 }}
+        transition={{ ease: "backInOut", duration: 2, delay: 3 }}
         className="hidden md:block absolute right-4 bottom-0"
       >
         <Spline scene="https://prod.spline.design/sqLRqrvDft1vLfqG/scene.splinecode" />

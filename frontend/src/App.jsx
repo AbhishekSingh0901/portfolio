@@ -68,14 +68,14 @@ function App() {
         <InfiniteMovingCardsDemo />
         <Contact />
       </div>
-      {/* <div
+      <div
         id="intro"
         className="absolute top-0 right-0 bottom-0 left-0 z-50 h-screen bg-neutral-800 text-neutral-400 flex justify-center items-center"
       >
         <h1 id="intro-heading" className="flex gap-10 text-6xl md:text-9xl">
           Hello! <GiDiamondsSmile />
         </h1>
-      </div> */}
+      </div>
     </div>
   );
 }

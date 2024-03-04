@@ -32,7 +32,7 @@ function Homepage() {
           <motion.h3
             initial={{ translateX: "-3rem", opacity: 0 }}
             whileInView={{ translateX: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 3 }}
             viewport={{ once: true }}
           >
             Hello!
@@ -40,7 +40,7 @@ function Homepage() {
           <motion.h1
             initial={{ translateX: "-3rem", opacity: 0 }}
             whileInView={{ translateX: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 0.5 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 3.5 }}
             viewport={{ once: true }}
             className="border-b-8 border-neutral-300 w-full text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 bg-clip-text text-3xl md:text-7xl lg:text-8xl pb-4 mb-4"
           >
@@ -49,7 +49,7 @@ function Homepage() {
           <motion.h4
             initial={{ translateX: "-3rem", opacity: 0 }}
             whileInView={{ translateX: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 4 }}
             viewport={{ once: true }}
           >
             React Frontend Web Developer
@@ -58,7 +58,7 @@ function Homepage() {
           <motion.button
             initial={{ translateY: "3rem", opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 4 }}
             viewport={{ once: true }}
             className=" text-white font-thin text-xl glass-effect py-3 px-6 mt-9 "
           >
