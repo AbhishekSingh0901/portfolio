@@ -14,14 +14,14 @@ import Skill from "../components/ui/Skill";
 
 function Skills() {
   return (
-    <section className=" relative pt-28 pb-14 px-12 overflow-hidden">
+    <section className=" relative  mb-24 md:p-20 p-3 px-12 overflow-hidden">
       <div className="relative z-20">
         <motion.h2
           initial={{ opacity: 0, translateY: "-4rem" }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: "backInOut" }}
           viewport={{ once: true }}
-          className="w-1/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300"
+          className="w-full md:w-1/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300"
         >
           SKILLS
         </motion.h2>

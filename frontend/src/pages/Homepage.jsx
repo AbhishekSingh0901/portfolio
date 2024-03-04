@@ -31,36 +31,41 @@ function Homepage() {
         <div className="mx-8 md:ml-20 lg:ml-28 mt-14 md:mt-20 text-neutral-300">
           <motion.h3
             initial={{ translateX: "-3rem", opacity: 0 }}
-            animate={{ translateX: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 3 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1 }}
+            viewport={{ once: true }}
           >
             Hello!
           </motion.h3>
           <motion.h1
             initial={{ translateX: "-3rem", opacity: 0 }}
-            animate={{ translateX: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 3.5 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
             className="border-b-8 border-neutral-300 w-full text-transparent bg-gradient-to-b from-neutral-300 to-neutral-600 bg-clip-text text-3xl md:text-7xl lg:text-8xl pb-4 mb-4"
           >
             I am <span className="text-animation">Abhishek Singh</span>
           </motion.h1>
           <motion.h4
             initial={{ translateX: "-3rem", opacity: 0 }}
-            animate={{ translateX: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 4 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 1 }}
+            viewport={{ once: true }}
           >
             React Frontend Web Developer
           </motion.h4>
 
           <motion.button
             initial={{ translateY: "3rem", opacity: 0 }}
-            animate={{ translateY: 0, opacity: 1 }}
-            transition={{ ease: "backInOut", duration: 1, delay: 4 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            transition={{ ease: "backInOut", duration: 1, delay: 1 }}
+            viewport={{ once: true }}
             className=" text-white font-thin text-xl glass-effect py-3 px-6 mt-9 "
           >
             <motion.p
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              viewport={{ once: true }}
             >
               Get Resume
             </motion.p>
