@@ -19,7 +19,7 @@ function AnimatedContact() {
           repeat: Infinity,
           repeatType: "loop",
           repeatDelay: 0.5,
-          delay: 2,
+          delay: 1,
         }}
         strokeLinecap="round"
         strokeLinejoin="round"
