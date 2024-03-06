@@ -8,7 +8,7 @@ function AnimatedContact() {
       viewBox="0 0 24 24"
       strokeWidth={0.1}
       stroke="#f5f5f5"
-      className=" w-80 h-80"
+      className=" w-full h-full"
     >
       <motion.path
         initial={{ pathLength: 0 }}

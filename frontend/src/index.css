@@ -31,6 +31,11 @@
   background-size: cover;
 }
 
+.contact {
+  background-image: url("../src/assets/contact-bg.png");
+  background-size: cover;
+}
+
 .glass-effect {
   @apply backdrop-blur-sm shadow-sm bg-black bg-opacity-5 border border-neutral-700;
 }

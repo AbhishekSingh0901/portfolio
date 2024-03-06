@@ -1,7 +1,6 @@
 import { Drawer } from "@mui/material";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 
 function Sidebar({ toggleState, setToggleState }) {
   return (
@@ -10,36 +9,36 @@ function Sidebar({ toggleState, setToggleState }) {
         <button className="absolute top-6 right-6 p-2 rounded-full hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
           <IoCloseOutline onClick={() => setToggleState(false)} />
         </button>
-        <NavLink
+        <a
           to="/home"
-          className="mx-6 py-2 rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
+          className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           Home
-        </NavLink>
-        <NavLink
+        </a>
+        <a
           to="/about"
-          className="mx-6 py-2 rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
+          className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           About
-        </NavLink>
-        <NavLink
+        </a>
+        <a
           to="/skills"
-          className="mx-6 py-2 rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
+          className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           Skills
-        </NavLink>
-        <NavLink
+        </a>
+        <a
           to="/project"
-          className="mx-6 py-2 rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
+          className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           Work
-        </NavLink>
-        <NavLink className="mx-6 py-2 rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
+        </a>
+        <a className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
           Testimonials
-        </NavLink>
-        <NavLink className="mx-6 py-2 rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
+        </a>
+        <a className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
           Contact
-        </NavLink>
+        </a>
       </motion.div>
     </Drawer>
   );

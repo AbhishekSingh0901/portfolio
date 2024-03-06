@@ -7,6 +7,7 @@ import { SiLeetcode } from "react-icons/si";
 import { motion, useInView } from "framer-motion";
 import music from "../assets/music.mp3";
 import Robot from "../components/Robot";
+import Links from "../components/ui/Links";
 
 // import Navbar from "../components/Navbar";
 
@@ -72,26 +73,7 @@ function Homepage() {
           </motion.button>
         </div>
         <div className=" absolute bottom-8 md:left-2 w-full md:w-fit flex justify-center md:flex-col  gap-4">
-          <div className="glass-effect flex justify-center items-center p-3 rounded-full">
-            <button className="icon-rounded">
-              <RiLinkedinLine />
-            </button>
-          </div>
-          <div className="glass-effect flex justify-center items-center p-3 rounded-full">
-            <button className="icon-rounded">
-              <VscGithubAlt />
-            </button>
-          </div>
-          <div className="glass-effect flex justify-center items-center p-3 rounded-full">
-            <button className="icon-rounded">
-              <FaXTwitter />
-            </button>
-          </div>
-          <div className="glass-effect flex justify-center items-center p-3 rounded-full">
-            <button className="icon-rounded">
-              <SiLeetcode />
-            </button>
-          </div>
+          <Links />
           <div
             className="glass-effect flex justify-center items-center p-3 rounded-full"
             onClick={togglePlayPause}
