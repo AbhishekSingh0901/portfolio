@@ -11,10 +11,11 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import Skill from "../components/ui/Skill";
+import { SparklesCore } from "../components/ui/sparkles";
 
 function Skills() {
   const fadeInUpAnimation = {
-    hidden: { opacity: 0, y: "50%" },
+    hidden: { opacity: 0, y: "10%" },
     show: {
       opacity: 1,
       y: 0,
@@ -23,19 +24,19 @@ function Skills() {
         stiffness: 400,
         damping: 5,
         staggerChildren: 0.3,
-        duration: 1.5,
+        duration: 0.3,
       },
     },
   };
   return (
     <section className=" relative  mb-24 md:p-20 p-3 px-12 overflow-hidden">
-      <div className="relative z-20">
+      <div className="relative z-20 ">
         <motion.h2
-          initial={{ opacity: 0, translateY: "-4rem" }}
-          whileInView={{ opacity: 1, translateY: 0 }}
-          transition={{ duration: 1, delay: 0.5, ease: "backInOut" }}
+          initial={{ opacity: 0, y: "-3rem" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "backInOut" }}
           viewport={{ once: true }}
-          className="w-full md:w-1/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300"
+          className="w-full md:w-1/2 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300"
         >
           SKILLS
         </motion.h2>

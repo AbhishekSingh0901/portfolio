@@ -26,7 +26,7 @@ function Homepage() {
   };
 
   return (
-    <section className="relative text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
+    <section className="relative mb-20 text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
       <div className="z-10">
         <div className="mx-8 md:ml-20 lg:ml-28 mt-14 md:mt-20 text-neutral-300">
           <motion.h3

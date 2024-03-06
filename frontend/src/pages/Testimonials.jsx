@@ -3,7 +3,7 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 export function InfiniteMovingCardsDemo() {
   return (
     <section className=" relative w-full mb-24 md:p-20 p-3 px-12 bg-transparent">
-      <h2 className="w-full md:w-1/2 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
+      <h2 className="w-full md:w-2/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
         TESTIMONIALS
       </h2>
       <InfiniteMovingCards

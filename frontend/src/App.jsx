@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import { SparklesCore } from "./components/ui/sparkles";
 import { InfiniteMovingCardsDemo } from "./pages/Testimonials";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
   const comp = useRef(null);
@@ -50,19 +51,9 @@ function App() {
         id="content"
         className="relative  bg-gradient-to-b from-neutral-800 to-neutral-950"
       >
-        <div className="w-full fixed z-0 top-0 bottom-0 left-0 right-0 inset-0 h-full">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#FFFFFF"
-          />
-        </div>
         <Navbar />
         <Homepage />
+        <About />
         <Skills />
         <Projects />
         <InfiniteMovingCardsDemo />
