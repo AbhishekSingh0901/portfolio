@@ -2,8 +2,8 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 export function ThreeDCardDemo({ name, description, image }) {
   return (
-    <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-white/[0.1] dark:bg-neutral-800 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+    <CardContainer className="inter-var relative hover:z-50">
+      <CardBody className=" bg-gray-50 relative group/card dark:hover:shadow-white/[0.1] dark:bg-neutral-800 dark:border-white/[0.2] border-black/[0.1]  2xl:w-[26rem] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"

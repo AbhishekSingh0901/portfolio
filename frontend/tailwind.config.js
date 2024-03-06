@@ -12,6 +12,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "2xl": "1720px",
+      },
       backgroundImage: {
         home: "url(./src/assets/bg.jpg)",
         tranquil: "url(./src/assets/tranquil.png)",

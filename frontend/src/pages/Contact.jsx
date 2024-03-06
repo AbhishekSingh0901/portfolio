@@ -55,7 +55,7 @@ function Contact() {
               <Links textColor="text-neutral-800" iconColor="text-neural-950" />
             </div>
           </div>
-          <div className="p-6 h-full flex items-center justify-center w-1/2">
+          <div className=" p-6 h-full relative w-1/2">
             <AnimatedContact />
           </div>
         </motion.div>

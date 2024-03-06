@@ -29,7 +29,7 @@ function Skills() {
     },
   };
   return (
-    <section className=" relative  mb-20 md:p-20 p-3 px-12 overflow-hidden">
+    <section className="relative  mb-20 md:p-20 p-3 px-12 overflow-hidden">
       <div className="relative z-20 ">
         <motion.h2
           initial={{ opacity: 0, y: "-3rem" }}
