@@ -26,7 +26,9 @@ function Contact() {
           <AnimatedContact />
         </motion.div>
       </section>
-      <footer className="h-[300px] text-neutral-200 text-center w-screen bg-zinc-900 shadow-2xl shadow-black"></footer>
+      <footer className="py-3 text-neutral-200 text-center w-screen bg-zinc-900 shadow-2xl shadow-black">
+        <h3 className="text-md">Made with 🧡 by @Bazinga</h3>
+      </footer>
     </>
   );
 }
