@@ -1,8 +1,20 @@
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
+import { SparklesCore } from "../components/ui/sparkles";
 
 export function InfiniteMovingCardsDemo() {
   return (
     <section className=" relative w-full mb-24 md:p-20 p-3 px-12 bg-transparent">
+      <div className="w-full absolute z-0 top-0 bottom-0 left-0 right-0 inset-0 h-full">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
       <h2 className="w-full md:w-2/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
         TESTIMONIALS
       </h2>
