@@ -5,7 +5,7 @@ import tranquil from "../assets/tranquil.png";
 
 function Projects() {
   return (
-    <section className="w-full mb-24 md:p-20 p-3 px-12 ">
+    <section className="w-full mb-20 md:p-20 p-3 px-12 ">
       <h2 className="w-full md:w-1/2 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
         PROJECTS
       </h2>

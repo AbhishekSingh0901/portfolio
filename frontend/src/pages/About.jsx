@@ -3,7 +3,7 @@ import illustration from "../assets/illustration.png";
 
 function About() {
   return (
-    <section className=" relative  mb-24 md:p-20 p-3 px-12 overflow-hidden">
+    <section className=" relative  mb-20 md:p-20 p-3 px-12 overflow-hidden">
       <h2 className="w-full md:w-1/2 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
         ABOUT ME
       </h2>
