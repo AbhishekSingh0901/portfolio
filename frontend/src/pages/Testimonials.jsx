@@ -5,7 +5,7 @@ export function InfiniteMovingCardsDemo() {
   return (
     <section
       id="testimonials"
-      className=" relative py-40 w-full  p-3 md:px-12 lg:px-20 px-6 bg-transparent"
+      className=" relative py-40 w-full mb-12  p-3 md:px-12 lg:px-20 px-6 bg-transparent"
     >
       <div className="w-full absolute z-0 top-0 bottom-0 left-0 right-0 inset-0 h-full">
         <SparklesCore
