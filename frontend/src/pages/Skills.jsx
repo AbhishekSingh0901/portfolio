@@ -23,13 +23,16 @@ function Skills() {
         type: "easeInOutBack",
         stiffness: 400,
         damping: 5,
-        staggerChildren: 0.3,
-        duration: 0.3,
+        staggerChildren: 0.1,
+        duration: 0.1,
       },
     },
   };
   return (
-    <section className="relative  mb-20 md:p-20 p-3 px-12 overflow-hidden">
+    <section
+      id="skills"
+      className="relative  mb-20 md:p-20 p-3  md:px-12 px-6 overflow-hidden"
+    >
       <div className="relative z-20 ">
         <motion.h2
           initial={{ opacity: 0, y: "-3rem" }}

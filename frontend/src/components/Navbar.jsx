@@ -14,12 +14,24 @@ function Navbar() {
       >
         <h2 className=" text-lg md:text-2xl">&lt;PORTFOLIO/&gt;</h2>
         <ul className="hidden list-none lg:flex justify-center gap-8 uppercase">
-          <li>Home</li>
-          <li>About</li>
-          <li>skills</li>
-          <li>work</li>
-          <li>testimonials</li>
-          <li>contact</li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
         <div
           onClick={() => setToggleState(true)}

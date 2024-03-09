@@ -10,33 +10,45 @@ function Sidebar({ toggleState, setToggleState }) {
           <IoCloseOutline onClick={() => setToggleState(false)} />
         </button>
         <a
-          to="/home"
+          href="#home"
+          onClick={() => setToggleState(false)}
           className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           Home
         </a>
         <a
-          to="/about"
+          href="#about"
+          onClick={() => setToggleState(false)}
           className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           About
         </a>
         <a
-          to="/skills"
+          href="#skills"
+          onClick={() => setToggleState(false)}
           className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           Skills
         </a>
         <a
-          to="/project"
+          href="#project"
+          onClick={() => setToggleState(false)}
           className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
         >
           Work
         </a>
-        <a className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
+        <a
+          href="#testimonials"
+          onClick={() => setToggleState(false)}
+          className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
+        >
           Testimonials
         </a>
-        <a className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105">
+        <a
+          href="#contact"
+          onClick={() => setToggleState(false)}
+          className="mx-6 py-2 text-center rounded-md hover:bg-neutral-700 bg-opacity-5 transition-all duration-100 active:scale-105"
+        >
           Contact
         </a>
       </motion.div>

@@ -1,10 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { IoPlayOutline, IoPauseOutline } from "react-icons/io5";
-import { RiLinkedinLine } from "react-icons/ri";
-import { VscGithubAlt } from "react-icons/vsc";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import music from "../assets/music.mp3";
 import Robot from "../components/Robot";
 import Links from "../components/ui/Links";
@@ -27,7 +23,10 @@ function Homepage() {
   };
 
   return (
-    <section className="relative mb-20 text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage">
+    <section
+      id="home"
+      className="relative mb-20 text-2xl md:text-4xl h-screen flex pt-16 md:pt-24 before:bg-neutral-900 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-50 homepage"
+    >
       <div className="z-10">
         <div className="mx-8 md:ml-20 lg:ml-28 mt-14 md:mt-20 text-neutral-300">
           <motion.h3
@@ -63,13 +62,16 @@ function Homepage() {
             viewport={{ once: true }}
             className=" text-white font-thin text-xl glass-effect py-3 px-6 mt-9 "
           >
-            <motion.p
+            <motion.a
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               viewport={{ once: true }}
+              href="https://drive.google.com/file/d/15lTNd1jZY-IKJ19WnQneooVgqCZNC4lx/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
             >
               Get Resume
-            </motion.p>
+            </motion.a>
           </motion.button>
         </div>
         <div className=" absolute bottom-8 md:left-2 w-full md:w-fit flex justify-center md:flex-col  gap-4">

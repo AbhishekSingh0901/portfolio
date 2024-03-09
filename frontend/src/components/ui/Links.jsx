@@ -9,24 +9,44 @@ function Links({ textColor, iconColor }) {
   return (
     <>
       <div className={className}>
-        <button className={iconstyle}>
+        <a
+          href="https://www.linkedin.com/in/abhishek-singh-2000/"
+          target="_blank"
+          rel="noreferrer"
+          className={iconstyle}
+        >
           <RiLinkedinLine />
-        </button>
+        </a>
       </div>
       <div className={className}>
-        <button className={iconstyle}>
+        <a
+          href="https://github.com/AbhishekSingh0901"
+          target="_blank"
+          rel="noreferrer"
+          className={iconstyle}
+        >
           <VscGithubAlt />
-        </button>
+        </a>
       </div>
       <div className={className}>
-        <button className={iconstyle}>
+        <a
+          href="https://twitter.com/Bazinga_09"
+          target="_blank"
+          rel="noreferrer"
+          className={iconstyle}
+        >
           <FaXTwitter />
-        </button>
+        </a>
       </div>
       <div className={className}>
-        <button className={iconstyle}>
+        <a
+          href="https://leetcode.com/abhi_0901/"
+          target="_blank"
+          rel="noreferrer"
+          className={iconstyle}
+        >
           <SiLeetcode />
-        </button>
+        </a>
       </div>
     </>
   );
