@@ -18,15 +18,9 @@ function Contact() {
           className=" mx-auto overflow-hidden h-2/3 glass-effect rounded-2xl flex justify-between items-center"
         >
           <div className="relative  bg-neutral-100 w-full lg:w-1/2 flex flex-col justify-start items-start gap-6 h-full p-6">
-            <motion.h2
-              initial={{ opacity: 0, translateY: "-4rem" }}
-              whileInView={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "backInOut" }}
-              viewport={{ once: true }}
-              className=" w-full text-4xl md:text-5xl pb-2 font-medium mb-3 text-animation border-b-2 border-neutral-300"
-            >
+            <h2 className=" w-full text-4xl md:text-5xl pb-2 font-medium mb-3 text-animation border-b-2 border-neutral-300">
               LET&apos;S CONNECT
-            </motion.h2>
+            </h2>
             <TextField
               fullWidth
               id="outlined-basic"

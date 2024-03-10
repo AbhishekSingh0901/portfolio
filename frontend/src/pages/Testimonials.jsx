@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import { SparklesCore } from "../components/ui/sparkles";
 
@@ -18,9 +19,15 @@ export function InfiniteMovingCardsDemo() {
           particleColor="#FFFFFF"
         />
       </div>
-      <h2 className="w-full md:w-2/3 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300">
+      <motion.h2
+        initial={{ opacity: 0, y: "-3rem" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "backInOut" }}
+        viewport={{ once: true }}
+        className="w-full md:w-1/2 text-4xl md:text-6xl pb-2 font-medium mb-12 text-animation border-b-2 border-neutral-300"
+      >
         TESTIMONIALS
-      </h2>
+      </motion.h2>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

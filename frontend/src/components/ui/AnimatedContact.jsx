@@ -29,7 +29,7 @@ function AnimatedContact() {
       >
         <motion.path
           initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
+          whileInView={{ pathLength: 1 }}
           transition={{
             duration: 2,
             ease: "easeInOut",
